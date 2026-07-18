@@ -1,0 +1,61 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python (backend, ai-service) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+uv.lock.bak
+
+# --- Node / React (frontend) ---
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Docker / infra ---
+docker-compose.override.yml
+*.pid
+
+# --- Databases / data ---
+*.sqlite3
+pgdata/
+redisdata/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- IDE / OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Observability / eval artifacts ---
+.langsmith/
+langfuse_data/
